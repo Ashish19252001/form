@@ -1,0 +1,114 @@
+<div class="oj-hybrid-padding">
+    <h1>Table Content Area</h1>
+    <div>
+        To change the content of this section, you will make edits to the customers.html file located in the /js/views folder.
+    </div>
+    <div>
+        <oj-table
+            id="tabble"
+            aria-label="Departments Tanble"
+            accessibility.row-header="name"
+            data="[[datasource]]"
+            columns='[
+                    {"headerText": "Remove",    
+                        "sortable": "disabled",
+                        "resizable": "enabled",
+                        "id": "remove"},
+                    {"headerText": "Id", 
+                        "field": "ID",
+                        "resizable": "enabled",
+                        "id": "id"},
+                    {"headerText": "Name", 
+                        "field": "NAME",
+                        "resizable": "enabled",
+                        "id": "name"},
+                    {"headerText": "Class", 
+                        "field": "CLASS",
+                        "resizable": "enabled",
+                        "id": "class"},
+                    {"headerText": "Subject 1", 
+                        "field": "MARKS_SUB1",
+                        "resizable": "enabled",
+                        "id": "sub1"},
+                    {"headerText": "Subject 2", 
+                        "field": "MARKS_SUB2",
+                        "resizable": "enabled",
+                        "id": "sub2"},
+                    {"headerText": "Subject 3", 
+                        "field": "MARKS_SUB3",
+                        "resizable": "enabled",
+                        "id": "sub3"}]'
+            selection-mode='{"row": "none", "column": "none"}'>
+            <template slot="rowTemplate" data-oj-as="row">
+                <tr>
+                    <td>
+                        <oj-checkboxset
+                         aria-hidden="true"
+                         on-value-changed="[[enableDelete]]"
+                         class="oj-checkboxset-no-chrome"
+                         data-oj-clickthrough="disabled">
+                            <oj-option
+                             :id="[[row.data.ID]]"
+                             value="[[row.data.ID]]">
+                            </oj-option>
+                        </oj-checkboxset>
+                    </td>
+                    <td>
+                        <div
+                          id="Id">
+                          <!-- on-click="[[function(data, event){ showChangeNameDialog(row.data.DepartmentId,data,event) }]]"> -->
+                            <oj-bind-text value="[[row.data.ID]]"></oj-bind-text>
+                        </div>
+                    </td>
+                    <td>
+                        <div
+                          id="name">
+                          <!-- on-click="[[function(data, event){ showChangeNameDialog(row.data.DepartmentId,data,event) }]]"> -->
+                            <oj-bind-text value="[[row.data.NAME]]"></oj-bind-text>
+                        </div>
+                    </td>
+                    <td>
+                        <div
+                          id="class">
+                          <!-- on-click="[[function(data, event){ showChangeNameDialog(row.data.DepartmentId,data,event) }]]"> -->
+                            <oj-bind-text value="[[row.data.CLASS]]"></oj-bind-text>
+                        </div>
+                    </td>
+                    <td>
+                        <div
+                          id="sub1">
+                          <!-- on-click="[[function(data, event){ showChangeNameDialog(row.data.DepartmentId,data,event) }]]"> -->
+                            <oj-bind-text value="[[row.data.MARKS_SUB1]]"></oj-bind-text>
+                        </div>
+                    </td>
+                    <td>
+                        <div
+                          id="sub2">
+                          <!-- on-click="[[function(data, event){ showChangeNameDialog(row.data.DepartmentId,data,event) }]]"> -->
+                            <oj-bind-text value="[[row.data.MARKS_SUB2]]"></oj-bind-text>
+                        </div>
+                    </td>
+                    <td>
+                        <div
+                          id="sub3">
+                          <!-- on-click="[[function(data, event){ showChangeNameDialog(row.data.DepartmentId,data,event) }]]"> -->
+                            <oj-bind-text value="[[row.data.MARKS_SUB3]]"></oj-bind-text>
+                        </div>
+                    </td>
+                </tr>
+            </template>
+        </oj-table>
+        <br />
+        (Click on a Department Name to edit it)
+        <br />
+        <br />
+        
+        <oj-button
+          id="deleteDept_btn"
+          disabled="[[!somethingChecked()]]"
+          on-oj-action="[[deleteDepartment]]">
+            Remove Department
+        </oj-button>
+    </div>
+  </div>
+  

@@ -1,0 +1,43 @@
+<!--
+ Copyright (c) 2014, 2023, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+<div class="oj-hybrid-padding">
+  <h1>Customers Content Area</h1>
+  <div>
+      To change the content of this section, you will make edits to the customers.html file located in the /js/views folder.
+  </div>
+  <div>
+    <oj-table
+            id="table"
+            aria-label="Departments Table"
+            accessibility.row-header="depName"
+            data="[[datasource]]"
+            selection-mode='{"row": "multiple", "column": "multiple"}'
+            dnd='{"reorder": {"columns": "enabled"}}'
+            scroll-policy="loadMoreOnScroll"
+            scroll-policy-options='{"fetchSize": 10}'
+            columns='[{"headerText": "Department Id", 
+                       "field": "ID",
+                       "headerClassName": "oj-sm-only-hide",
+                       "className": "oj-sm-only-hide",
+                       "resizable": "enabled",
+                       "id": "depId"},
+                      {"headerText": "Department Name", 
+                       "field": "PAYMENT_SITE_NAME",
+                       "resizable": "enabled",
+                       "id": "depName"},
+                      {"headerText": "Location Id", 
+                       "field": "PAYMENT_TYPE",
+                       "headerClassName": "oj-sm-only-hide",
+                       "className": "oj-sm-only-hide",
+                       "resizable": "enabled",
+                       "id": "locId"},
+                      {"headerText": "Manager Id", 
+                       "field": "PAYMENT_CHANNEL",
+                       "resizable": "enabled",
+                       "id": "manId"}]'
+            class="demo-table-container"></oj-table>
+  </div>
+</div>

@@ -1,0 +1,162 @@
+[
+  {
+    "ID": 1,
+    "NAME": "Lamb Russo",
+    "CLASS": 8,
+    "MARKS_SUB1": 77,
+    "MARKS_SUB2": 67,
+    "MARKS_SUB3": 40
+  },
+  {
+    "ID": 2,
+    "NAME": "Mclean Ellis",
+    "CLASS": 12,
+    "MARKS_SUB1": 23,
+    "MARKS_SUB2": 42,
+    "MARKS_SUB3": 35
+  },
+  {
+    "ID": 3,
+    "NAME": "Lorie Hutchinson",
+    "CLASS": 1,
+    "MARKS_SUB1": 29,
+    "MARKS_SUB2": 27,
+    "MARKS_SUB3": 40
+  },
+  {
+    "ID": 4,
+    "NAME": "Socorro Kirkland",
+    "CLASS": 6,
+    "MARKS_SUB1": 60,
+    "MARKS_SUB2": 63,
+    "MARKS_SUB3": 89
+  },
+  {
+    "ID": 5,
+    "NAME": "Alvarez Myers",
+    "CLASS": 9,
+    "MARKS_SUB1": 74,
+    "MARKS_SUB2": 32,
+    "MARKS_SUB3": 71
+  },
+  {
+    "ID": 6,
+    "NAME": "Mitzi Burton",
+    "CLASS": 6,
+    "MARKS_SUB1": 27,
+    "MARKS_SUB2": 79,
+    "MARKS_SUB3": 44
+  },
+  {
+    "ID": 7,
+    "NAME": "Inez Little",
+    "CLASS": 7,
+    "MARKS_SUB1": 50,
+    "MARKS_SUB2": 53,
+    "MARKS_SUB3": 92
+  },
+  {
+    "ID": 8,
+    "NAME": "Wiggins Gallegos",
+    "CLASS": 4,
+    "MARKS_SUB1": 62,
+    "MARKS_SUB2": 95,
+    "MARKS_SUB3": 72
+  },
+  {
+    "ID": 9,
+    "NAME": "Barrett Galloway",
+    "CLASS": 6,
+    "MARKS_SUB1": 92,
+    "MARKS_SUB2": 35,
+    "MARKS_SUB3": 41
+  },
+  {
+    "ID": 10,
+    "NAME": "Elsie Perry",
+    "CLASS": 4,
+    "MARKS_SUB1": 41,
+    "MARKS_SUB2": 81,
+    "MARKS_SUB3": 78
+  },
+  {
+    "ID": 11,
+    "NAME": "Nunez Langley",
+    "CLASS": 12,
+    "MARKS_SUB1": 34,
+    "MARKS_SUB2": 28,
+    "MARKS_SUB3": 26
+  },
+  {
+    "ID": 12,
+    "NAME": "Juliette Wright",
+    "CLASS": 8,
+    "MARKS_SUB1": 50,
+    "MARKS_SUB2": 82,
+    "MARKS_SUB3": 61
+  },
+  {
+    "ID": 13,
+    "NAME": "Michele Preston",
+    "CLASS": 11,
+    "MARKS_SUB1": 49,
+    "MARKS_SUB2": 54,
+    "MARKS_SUB3": 48
+  },
+  {
+    "ID": 14,
+    "NAME": "Rhodes Levy",
+    "CLASS": 6,
+    "MARKS_SUB1": 91,
+    "MARKS_SUB2": 68,
+    "MARKS_SUB3": 57
+  },
+  {
+    "ID": 15,
+    "NAME": "Garrett Nash",
+    "CLASS": 7,
+    "MARKS_SUB1": 99,
+    "MARKS_SUB2": 89,
+    "MARKS_SUB3": 53
+  },
+  {
+    "ID": 16,
+    "NAME": "Cleveland Duran",
+    "CLASS": 9,
+    "MARKS_SUB1": 27,
+    "MARKS_SUB2": 94,
+    "MARKS_SUB3": 84
+  },
+  {
+    "ID": 17,
+    "NAME": "Kenya Diaz",
+    "CLASS": 8,
+    "MARKS_SUB1": 52,
+    "MARKS_SUB2": 22,
+    "MARKS_SUB3": 64
+  },
+  {
+    "ID": 18,
+    "NAME": "Lily Patrick",
+    "CLASS": 12,
+    "MARKS_SUB1": 96,
+    "MARKS_SUB2": 81,
+    "MARKS_SUB3": 75
+  },
+  {
+    "ID": 19,
+    "NAME": "Day Hendrix",
+    "CLASS": 11,
+    "MARKS_SUB1": 63,
+    "MARKS_SUB2": 62,
+    "MARKS_SUB3": 46
+  },
+  {
+    "ID": 20,
+    "NAME": "Chris Koch",
+    "CLASS": 8,
+    "MARKS_SUB1": 72,
+    "MARKS_SUB2": 25,
+    "MARKS_SUB3": 51
+  }
+]
