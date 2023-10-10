@@ -44,6 +44,8 @@ define([
             this.addRow = this.__addRow.bind(this);
             this.updateRow = this.__updateRow.bind(this);
             this._initValidators();
+            
+            this.firstSelectedRowChangedListener=this.__firstSelectedRowChangedListener.bind(this);
             this.validatorss = ko.observableArray([
                 new AsyncLengthValidator({
                     min: 5,
@@ -80,7 +82,20 @@ define([
             this.inputClass = ko.observable();
             this.inputMarksSub1 = ko.observable(); 
             this.emailPatternValue=ko.observable();
+            
         };
+        IncidentViewModel.prototype.__firstSelectedRowChangedListener=function(event){
+
+                const itemContext = event.detail.value;
+                if (itemContext && itemContext.data) {
+                    const dept = itemContext.data;
+                    this.inputStudentId(dept.ID);
+                    this.inputStudentName(dept.NAME);
+                    this.inputClass(dept.CLASS);
+                    this.inputMarksSub1(dept.MARKS_SUB1);
+                    this.emailPatternValue(dept.Email)
+                }
+            };
         
         IncidentViewModel.prototype.__initComputed = function () {
             this.disableCreate = ko.computed(() => {

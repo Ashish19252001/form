@@ -53,7 +53,7 @@
           </oj-button>
           <oj-button
             id="updateButton"
-            on-oj-action="[[updateRow]]"
+            on-oj-action="[[updateRow]]" 
             disabled="[[disableRemoveUpdate]]"
             chroming='danger'>
             Update
@@ -86,7 +86,9 @@
                   {"headerText": "Marks Subject 1", "field": "MARKS_SUB1", "id": "manId"},
                   {"headerText": "Emailll","field": "Email","id":"EID"}]' 
         selection-mode.row="single"
-        first-selected-row="{{selectedRow}}">
+        first-selected-row="{{selectedRow}}"
+        
+        on-first-selected-row-changed="[[firstSelectedRowChangedListener]]"> 
       </oj-table>
       <div
         id="noDataDiv"
