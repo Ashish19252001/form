@@ -137,6 +137,7 @@ define([
         IncidentViewModel.prototype.__updateRow = async function () {
             // console.log("called")
             if (this.groupValid() !== 'invalidShown') {
+                // console.log(this.inputStudentId())
                 const result_data = {
                     ID: this.inputStudentId(),
                     NAME: this.inputStudentName(),
@@ -144,7 +145,7 @@ define([
                     MARKS_SUB1: this.inputMarksSub1(), 
                     Email:this.emailPatternValue()
                 };
-                console.log(result_data)
+                console.log(result_data.ID+"coming?")
                 try {
                     const res = await ResultsServices.updateResult(result_data);
                     console.log("hc")

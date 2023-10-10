@@ -54,7 +54,7 @@ define(['text!../../json/config.json'], function (configFile) {
     }
 
     async putData(endpointProperty, bodyData) {
-      console.log(bodyData)
+      console.log(bodyData+"ashish")
       const api_url = this.buildEndpointUrl(endpointProperty) + `/${bodyData.ID}`;
       console.log(api_url)
       try {

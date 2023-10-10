@@ -13,7 +13,7 @@ define(['utils/Service'], function (ServiceUtils) {
   }
 
   ResultsServices.prototype.updateResult = async function (result_data) {
-    console.log(result_data)
+    console.log(result_data+"ashsihshhsh")
     return await ServiceUtils.putData('result', result_data);
   }
 
